@@ -1,9 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
 // import {  Link } from "gatsby"
 import Layout from "../components/layout"
 import { Canvas } from "react-three-fiber"
 
 const IndexPage = () => {
+
+  const [hovered, setHovered] = useState(false);
+
   return(
     <Layout>
       <div>
@@ -11,12 +14,14 @@ const IndexPage = () => {
       </div>
       <div>
       <Canvas>
-        <mesh>
+        <mesh
+        onPointerOver={ () => setHovered(true) }
+        onPointerOut={ () => setHovered(false) }>
           <boxBufferGeometry
             attach="geometry"
             arcs={[6, 6, 6]}
           />
-          <meshBasicMaterial attach="material" color="red" />
+          <meshBasicMaterial attach="material" color={ hovered ? "red" : "blue" } />
         </mesh>
       </Canvas>
 
