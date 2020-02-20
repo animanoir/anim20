@@ -620,3 +620,9 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+canvas{
+  height: 100%;
+  width: 100%;
+}
