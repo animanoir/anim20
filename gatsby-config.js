@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Animanoir`,
     description: `Fantasmas, espectros y seres etéreos.`,
-    author: `@geosminu`,
+    author: `Óscar A. Montiel`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

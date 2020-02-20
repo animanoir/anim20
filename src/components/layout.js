@@ -1,23 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <>
+    <Helmet>
+      <html lang="en" />
+      <title>Animanoir</title>
+      <meta name="description" content="site description" />
+    </Helmet>
       <Header siteTitle="Animanoir" />
       <div
         style={{
@@ -26,9 +21,14 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <main>
+
+          {children}
+          <h1>Ghosts, spectres and ethereal entities.</h1>
+        </main>
+
         <footer>
-        <a target="_blank" href="https://animanoir.com">animanoir.com (viejito)</a>
+          <small>por Óscar A. Montiel | 2020</small>
         </footer>
       </div>
     </>
