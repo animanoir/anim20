@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 // import {  Link } from "gatsby"
 import Layout from "../components/layout"
+import Menu from "../components/index/menu"
 import { Canvas } from "react-three-fiber"
 
 const IndexPage = () => {
@@ -21,10 +22,12 @@ const IndexPage = () => {
             attach="geometry"
             arcs={[6, 6, 6]}
           />
-          <meshBasicMaterial attach="material" color={ hovered ? "red" : "blue" } />
+
+
+          <meshBasicMaterial attach="material" color={ hovered ? "red" : "green" } />
         </mesh>
       </Canvas>
-
+      <Menu />
       </div>
     </Layout>
     )

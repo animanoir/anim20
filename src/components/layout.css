@@ -199,7 +199,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: hsla(0, 0%, 90%, 0.8);
+  background-color: rgb(7, 7, 7);
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -621,8 +622,11 @@ pre tt:after {
   }
 }
 
-
 canvas{
   height: 100%;
   width: 100%;
+}
+
+.layout{
+  height: 100%;
 }
