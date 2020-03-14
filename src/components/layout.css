@@ -622,6 +622,8 @@ pre tt:after {
   }
 }
 
+/* ANCHOR A partir de aquí éstas son mis reglas. */
+
 canvas{
   height: 100%;
   width: 100%;
@@ -629,4 +631,8 @@ canvas{
 
 .layout{
   height: 100%;
+}
+
+.index_header-title{
+  font-size: 10rem;
 }

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Animanoir`,
-    description: `Fantasmas, espectros y seres etéreos.`,
+    description: `Desarrollo creativo multimedia y web.`,
     author: `Óscar A. Montiel`,
   },
   plugins: [

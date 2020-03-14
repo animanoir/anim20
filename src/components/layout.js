@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { FaTwitter } from "react-icons/fa";
+import { FaTwitter, FaHeartBroken } from "react-icons/fa";
 
 import Header from "./header"
 import "./layout.css"
@@ -14,24 +14,16 @@ const Layout = ({ children }) => {
       <title>Animanoir</title>
       <meta name="description" content="site description" />
     </Helmet>
+    <div id='grain'>
+      <main>
+        {children}
+      </main>
 
-      <div
-      className="layout"
-        style={{
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>
+      <footer>
+        <small>por Óscar A. Montiel <FaHeartBroken /> 2020 <FaHeartBroken /> <FaTwitter /> @geosminu </small>
+      </footer>
 
-          {children}
-        </main>
-
-        <footer>
-          <small>por Óscar A. Montiel | 2020 | </small>
-          <FaTwitter />@geosminu
-        </footer>
-      </div>
+    </div>
     </>
   )
 }

@@ -5,8 +5,7 @@ const Menu = () => {
 
   return(
     <div>
-      <h1>Animanoir</h1>
-
+      <h1 className="index_header-title">Animanoir</h1>
     </div>
   )
 }
