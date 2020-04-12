@@ -14,8 +14,9 @@ export const Menu = () => (
     <h1
       css={css`
         color: white;
+        font-family: Open Sans;
       `}
-    >Animanoir | Òscar A. Montiel</h1>
+    >Animanoir | Òscar A. Montiel (el sitio està en construcciòn, nene.</h1>
     <ul>
       <li>Proyectos</li>
       <li>Blog</li>
