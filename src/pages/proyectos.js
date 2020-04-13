@@ -9,11 +9,9 @@ import SEO from "../components/seo"
 
 const IndexPage = () => {
 
-
-
   return(
   <Layout>
-    <h2>Bienvenido. Acabas de llegar a lo que será el nuevo hogar para Animanoir.</h2>
+    <h2>proyectos</h2>
     <h2>Estoy trabajando en ello. Mientras tanto, deja que te consuma el tiempo visitando <Link to="/acerca/">Acerca</Link>, o bien, <a target="_blank" href="https://animanoir.com">animanoir.com (viejito)</a></h2>
     <h2>Saludos.</h2>
     <div style={{
