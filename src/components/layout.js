@@ -6,6 +6,8 @@ import Helmet from 'react-helmet';
 import { Container, Col, Row } from 'react-grid-system';
 import { Global, css, jsx } from '@emotion/core';
 
+import { FaTwitter, FaLinkedin, FaGithub, FaFlickr } from 'react-icons/fa';
+
 import Header from "./header"
 import Menu from "./menu"
 
@@ -58,15 +60,17 @@ const Layout = ({ children }) => {
     <footer css={css`
       color:white;
       font-family: Open Sans;
-      font-size: 0.6rem;
-
+      font-size: .7rem;
       `}>
 
 
       <Container fluid>
         <Row>
-          <Col sm={6}>
-            Links
+          <Col sm={6} style={{color: 'white'}} >
+            <FaTwitter />
+            <FaFlickr />
+            <FaLinkedin />
+            <FaGithub />
           </Col>
           <Col sm={6}>
           <p>por Óscar A. Montiel | 2020</p>
