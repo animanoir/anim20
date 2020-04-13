@@ -12,6 +12,10 @@ const NavLink = styled(Link)`
     color: white;
   }
 
+  :hover {
+    color: white;
+  }
+
 `;
 
 export const Menu = () => (
@@ -20,6 +24,8 @@ export const Menu = () => (
   <nav
     css={css`
       position: absolute;
+      padding-top: 1rem;
+      padding-left: 1rem;
       color: white;
     `}
   >
@@ -27,13 +33,21 @@ export const Menu = () => (
       css={css`
         color: white;
         font-family: Open Sans;
+        padding-bottom: 1rem;
+        font-size: 1rem;
       `}
-    >Animanoir | Òscar A. Montiel</h1>
-    <ul>
-      <li> <NavLink activeClassName='current-page' to='proyectos'>Proyectos</NavLink> </li>
-      <li> <NavLink activeClassName='current-page' to='blog'>Blog</NavLink> </li>
-      <li> <NavLink activeClassName='current-page' to='acerca'>Acerca</NavLink> </li>
-      <li> <NavLink activeClassName='current-page' to='contacto'>Contacto</NavLink> </li>
+    > <span css={css`:hover {color: red}`} > <NavLink to=''>Animanoir </NavLink></span> | <span css={css`font-weight: normal`}>Óscar A. Montiel</span></h1>
+    <ul
+      css={css`
+        list-style-type: none;
+        font-family: Lato;
+        font-size: 0.9rem;
+      `}
+    >
+      <li> <NavLink activeClassName='current-page' to='proyectos'>.proyectos</NavLink> </li>
+      <li> <NavLink activeClassName='current-page' to='blog'>.blog</NavLink> </li>
+      <li> <NavLink activeClassName='current-page' to='acerca'>.acerca</NavLink> </li>
+      <li> <NavLink activeClassName='current-page' to='contacto'>.contacto</NavLink> </li>
     </ul>
   </nav>
   </>

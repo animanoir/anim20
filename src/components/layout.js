@@ -22,9 +22,11 @@ const Layout = ({ children }) => {
         margin: 0;
       }
 
+      /*
       * + * {
         margin-top: 1rem;
       }
+      */
 
       html, body {
         background-color: black;
@@ -37,8 +39,6 @@ const Layout = ({ children }) => {
           margin-top: 0;
         }
       }
-
-
 
     `}
     />
@@ -55,8 +55,24 @@ const Layout = ({ children }) => {
     >
       {children}
     </main>
-    <footer>
-      <p>por Óscar A. Montiel</p>
+    <footer css={css`
+      color:white;
+      font-family: Open Sans;
+      font-size: 0.6rem;
+
+      `}>
+
+
+      <Container fluid>
+        <Row>
+          <Col sm={6}>
+            Links
+          </Col>
+          <Col sm={6}>
+          <p>por Óscar A. Montiel | 2020</p>
+          </Col>
+        </Row>
+        </Container>
     </footer>
     </>
   )
