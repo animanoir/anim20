@@ -1,6 +1,18 @@
 /** @jsx jsx */
 import React from 'react';
-import { css, jsx  } from '@emotion/core';
+import { Link } from 'gatsby';
+import { css, jsx } from '@emotion/core';
+import styled from '@emotion/styled';
+
+const NavLink = styled(Link)`
+  color: red;
+  text-decoration: none;
+
+  &.current-page{
+    color: white;
+  }
+
+`;
 
 export const Menu = () => (
 
@@ -16,12 +28,12 @@ export const Menu = () => (
         color: white;
         font-family: Open Sans;
       `}
-    >Animanoir | Òscar A. Montiel (el sitio està en construcciòn, nene.</h1>
+    >Animanoir | Òscar A. Montiel</h1>
     <ul>
-      <li>Proyectos</li>
-      <li>Blog</li>
-      <li>Acerca</li>
-      <li>Contacto</li>
+      <li> <NavLink activeClassName='current-page' to='proyectos'>Proyectos</NavLink> </li>
+      <li> <NavLink activeClassName='current-page' to='blog'>Blog</NavLink> </li>
+      <li> <NavLink activeClassName='current-page' to='acerca'>Acerca</NavLink> </li>
+      <li> <NavLink activeClassName='current-page' to='contacto'>Contacto</NavLink> </li>
     </ul>
   </nav>
   </>

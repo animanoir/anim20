@@ -48,9 +48,6 @@ const Layout = ({ children }) => {
     <Menu />
     <main
       css={css`
-        margin: 1rem auto 4rem;
-        max-width: 90vw;
-        width: 90%;
         background-color: black;
       `}
     >
