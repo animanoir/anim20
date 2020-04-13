@@ -2,6 +2,8 @@
 import React from "react"
 import useSiteMetadata from './hooks/use-siteMetadata';
 import Helmet from 'react-helmet';
+
+import { Container, Col, Row } from 'react-grid-system';
 import { Global, css, jsx } from '@emotion/core';
 
 import Header from "./header"
@@ -25,7 +27,7 @@ const Layout = ({ children }) => {
       }
 
       html, body {
-        background-color: red;
+        background-color: black;
         margin: 0;
         font-size: 18px;
         line-height: 1.4
@@ -48,13 +50,13 @@ const Layout = ({ children }) => {
     <Menu />
     <main
       css={css`
-        background-color: black;
+        background-color: white;
       `}
     >
       {children}
     </main>
     <footer>
-      <p>por Òscar A. Montiel</p>
+      <p>por Óscar A. Montiel</p>
     </footer>
     </>
   )
