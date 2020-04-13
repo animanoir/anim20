@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
     <Menu />
     <main
       css={css`
-        background-color: white;
+        background-color: black;
       `}
     >
       {children}
