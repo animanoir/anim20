@@ -30,7 +30,7 @@ export const Menu = () => (
       `}
     >Animanoir | Òscar A. Montiel</h1>
     <ul>
-      <li> <NavLink activeClassName='current-page' to='proyectos'>Proyectos</NavLink> </li>
+      <li> <NavLink activeClassName='current-page' to='proyectos'>Proyectos SITIO WEB EN CONSTRUCCIÓN</NavLink> </li>
       <li> <NavLink activeClassName='current-page' to='blog'>Blog</NavLink> </li>
       <li> <NavLink activeClassName='current-page' to='acerca'>Acerca</NavLink> </li>
       <li> <NavLink activeClassName='current-page' to='contacto'>Contacto</NavLink> </li>
