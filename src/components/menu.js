@@ -44,7 +44,7 @@ export const Menu = () => (
         font-size: 0.9rem;
       `}
     >
-      <li> <NavLink activeClassName='current-page' to='proyectos'>.proyectos</NavLink> </li>
+      <li> <NavLink activeClassName='current-page' to='proyectos'>.proyectos SITIO WEB EN CONSTRUCCIÓN</NavLink> </li>
       <li> <NavLink activeClassName='current-page' to='blog'>.blog</NavLink> </li>
       <li> <NavLink activeClassName='current-page' to='acerca'>.acerca</NavLink> </li>
       <li> <NavLink activeClassName='current-page' to='contacto'>.contacto</NavLink> </li>
