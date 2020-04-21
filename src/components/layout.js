@@ -93,7 +93,7 @@ const Layout = ({ children }) => {
                 justify-content: flex-end;
               `}
             >
-            <p css={css`font-size: .5rem;`}>por Óscar A. Montiel | 2020</p>
+            <p css={css`font-size: .5rem; opacity: 0.3 `}>por Óscar A. Montiel | 2020</p>
             </Col>
           </Row>
           </Container>
