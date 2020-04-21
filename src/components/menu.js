@@ -36,18 +36,18 @@ export const Menu = () => (
         padding-bottom: 1rem;
         font-size: 1rem;
       `}
-    > <span css={css`:hover {color: red}`} > <NavLink to=''>Animanoir </NavLink></span> | <span css={css`font-weight: normal`}>Óscar A. Montiel</span></h1>
+    > <span css={css`:hover {color: red}`} > <NavLink to=''>Animanoir (sitio en construcción) </NavLink></span> | <span css={css`font-weight: normal`}>Óscar A. Montiel</span></h1>
     <ul
       css={css`
         list-style-type: none;
         font-family: Lato;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       `}
     >
-      <li> <NavLink activeClassName='current-page' to='proyectos'>.proyectos SITIO WEB EN CONSTRUCCIÓN</NavLink> </li>
-      <li> <NavLink activeClassName='current-page' to='blog'>.blog</NavLink> </li>
-      <li> <NavLink activeClassName='current-page' to='acerca'>.acerca</NavLink> </li>
-      <li> <NavLink activeClassName='current-page' to='contacto'>.contacto</NavLink> </li>
+      <li> <NavLink activeClassName='current-page' to='proyectos'>.proyectos</NavLink> </li>
+      <li> <NavLink activeClassName='current-page' to='blog'>.blog</NavLink></li>
+      <li> <NavLink activeClassName='current-page' to='acerca'>.acerca</NavLink></li>
+      <li> <NavLink activeClassName='current-page' to='contacto'>.contacto</NavLink></li>
     </ul>
   </nav>
   </>
