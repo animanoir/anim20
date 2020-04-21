@@ -7,21 +7,18 @@ import { Container, Col, Row } from 'react-grid-system';
 import { Global, css, jsx } from '@emotion/core';
 
 import { FaTwitter, FaLinkedin, FaGithub, FaFlickr } from 'react-icons/fa';
-import {Canvas, useFrame } from 'react-three-fiber';
+// import {Canvas, useFrame } from 'react-three-fiber';
 
 import Menu from "./menu"
 
-
 const Layout = ({ children }) => {
-
   const { title, description } = useSiteMetadata();
-
   const mesh = useRef();
 
-  useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.01));
+  // useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.01));
 
   return (
-    <>
+    <div>
     <Global styles={css`
       * {
         box-sizing: box;
@@ -53,14 +50,6 @@ const Layout = ({ children }) => {
       <title>{ title }</title>
       <description>{description}</description>
       </Helmet>
-
-    <Canvas css={css`position: fixed; z-index: -10;`}>
-    <mesh
-    ref={mesh}
-    scale={[1.5, 1.5, 1.5] }>
-    <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
-    <meshStandardMaterial attach="material" color={'white'} />
-  </mesh>
       <Menu />
       <main
         css={css`
@@ -88,8 +77,7 @@ const Layout = ({ children }) => {
           </Row>
           </Container>
       </footer>
-    </Canvas>
-    </>
+    </div>
   )
 }
 
