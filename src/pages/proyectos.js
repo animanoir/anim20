@@ -11,6 +11,7 @@ const IndexPage = () => {
 
   return(
   <Layout>
+    <SEO title="Proyectos de" />
 
   </Layout>
   );

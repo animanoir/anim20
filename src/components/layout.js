@@ -7,7 +7,6 @@ import { Container, Col, Row } from 'react-grid-system';
 import { Global, css, jsx } from '@emotion/core';
 
 import { FaTwitter, FaLinkedin, FaGithub, FaFlickr } from 'react-icons/fa';
-// import {Canvas, useFrame } from 'react-three-fiber';
 
 import Menu from "./menu"
 
@@ -59,6 +58,8 @@ const Layout = ({ children }) => {
       <main
         css={css`
           background-color: black;
+          height: 100vh;
+          width: 100vw;
         `}
       >
         {children}
@@ -71,7 +72,6 @@ const Layout = ({ children }) => {
         bottom: 0;
         width: 100%;
         height: 2.5rem;
-
         `}>
         <Container fluid>
           <Row>
@@ -91,6 +91,7 @@ const Layout = ({ children }) => {
               css={css`
                 display: flex;
                 justify-content: flex-end;
+                align-items: center;
               `}
             >
             <p css={css`font-size: .5rem; opacity: 0.3 `}>por Óscar A. Montiel | 2020</p>

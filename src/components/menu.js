@@ -15,7 +15,6 @@ const NavLink = styled(Link)`
   :hover {
     color: white;
   }
-
 `;
 
 export const Menu = () => (
@@ -27,6 +26,7 @@ export const Menu = () => (
       padding-top: 1rem;
       padding-left: 1rem;
       color: white;
+      z-index: 2;
     `}
   >
     <h1
@@ -42,6 +42,7 @@ export const Menu = () => (
         list-style-type: none;
         font-family: Lato;
         font-size: 0.8rem;
+        line-height: 1.6rem;
       `}
     >
       <li> <NavLink activeClassName='current-page' to='proyectos'>.proyectos</NavLink> </li>
