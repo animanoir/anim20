@@ -7,6 +7,7 @@ import Layout from "../components/layout";
 import Menu from '../components/menu';
 import { Canvas } from 'react-three-fiber';
 import {  css, jsx } from '@emotion/core';
+import Controls from "../components/controls"
 
 
 import Image from "../components/image"
@@ -57,7 +58,7 @@ const IndexPage = () => {
       id="#three"
       onCreated={() => console.info("Se creó el canvas.")}
       css={css`
-          background: grey;
+          background: green;
           height: 100%
         `}
       camera={{ position: [0, 0, -5] }}>
