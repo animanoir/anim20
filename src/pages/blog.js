@@ -16,7 +16,7 @@ const IndexPage = () => {
 
   return(
   <Layout>
-
+    <SEO title="Blog de" />
   </Layout>
   );
 }
