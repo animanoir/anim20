@@ -4845,6 +4845,15 @@ download@^7.1.0:
     p-event "^2.1.0"
     pify "^3.0.0"
 
+drei@^0.0.15:
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/drei/-/drei-0.0.15.tgz#f1b3779fa7df04c1ce2e066fa90c0097f812a4c4"
+  integrity sha512-hLFos0Rub4XHI0E3sAePKal7bOWCiU2vZg4pAyFJaHWGdwF8JU048qj9TI7mSV4ersMInROP/sD+v2fvfCq8yQ==
+  dependencies:
+    "@babel/runtime" "^7.9.2"
+    postprocessing "^6.13.3"
+    react-merge-refs "^1.0.0"
+
 duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
@@ -10631,6 +10640,11 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.26, postcss@^7.0.5:
     chalk "^2.4.2"
     source-map "^0.6.1"
     supports-color "^6.1.0"
+
+postprocessing@^6.13.3:
+  version "6.13.3"
+  resolved "https://registry.yarnpkg.com/postprocessing/-/postprocessing-6.13.3.tgz#37ce789bd3107763e0adae5646ef2994bbd37a26"
+  integrity sha512-u+ynPbv+9S7a6HXfQGtKCoN58gVepTL8jR8LDiKAA8tKDthDg6lxS4QM4VSl5Q2Q3/eRIiL6XB3mLkve8LTKuw==
 
 potrace@^2.1.2:
   version "2.1.2"
