@@ -8,9 +8,8 @@ const PostPreview = ({ post }) => (
     color: white;
   `}
   >
-    <h3>{post.title}</h3>
+    <Link to={post.slug}><h2>{post.title}</h2></Link>
     <p>{post.excerpt}</p>
-    <Link to={post.slug}>ir al post</Link>
   </article>
 );
 

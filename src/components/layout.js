@@ -18,37 +18,36 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-    <Global styles={css`
-      * {
-        box-sizing: box;
-        margin: 0;
-      }
-
-      /*
-      * + * {
-        margin-top: 1rem;
-      }
-      */
-
-      html, body {
-        background-color: black;
-        margin: 0;
-        font-size: 18px;
-        line-height: 1.4;
-
-        /*Quita el margin-top del primer div que pone Gatsby.*/
-        > div {
-          margin-top: 0;
+      <Global styles={css`
+        * {
+          box-sizing: box;
+          margin: 0;
         }
-      }
 
-      main {
-        min-height: 100%;
-        position: relative;
-      }
+        /*
+        * + * {
+          margin-top: 1rem;
+        }
+        */
 
-    `}
-    />
+        html, body {
+          background-color: black;
+          margin: 0;
+          font-size: 18px;
+          line-height: 1.4;
+
+          /*Quita el margin-top del primer div que pone Gatsby.*/
+          > div {
+            margin-top: 0;
+          }
+        }
+
+        main {
+          min-height: 100%;
+          position: relative;
+        }
+      `}
+      />
     <Helmet>
       <meta charSet="utf-8" />
       <title>{ title }</title>
@@ -78,8 +77,6 @@ const Layout = ({ children }) => {
             <Col sm={6} style={{color: 'white'}}>
             <div css={css`
               min-width: 50%;
-              display:flex;
-              justify-content: space-between;
             `}>
               <a href='https://twitter.com/geosminu' target='_blank'><FaTwitter /></a>
               <a href='https://www.flickr.com/photos/animanoir/' target='_blank'><FaFlickr /></a>

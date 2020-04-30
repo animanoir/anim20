@@ -1,13 +1,10 @@
+/** @jsx jsx */
+
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout";
-import Menu from '../components/menu';
-import usePosts from '../components/hooks/use-posts';
+import {  css, jsx } from '@emotion/core';
 import PostPreview from '../components/post-preview';
-
-
-import Image from "../components/image"
+import usePosts from '../components/hooks/use-posts';
 import SEO from "../components/seo"
 
 const IndexPage = () => {
@@ -17,7 +14,23 @@ const IndexPage = () => {
   return(
   <Layout>
     <SEO title="Blog de" />
-  </Layout>
+    <div
+      css={css`
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      /*El translate hace que el punto de anclaje esté en el centro.*/
+      transform: translate(-50%, -50%);
+      `
+      }
+    >
+      {
+        posts.map(post => (
+          <PostPreview key={post.slug} post={post} />
+        ))
+      }
+    </div>
+    </Layout>
   );
 }
 

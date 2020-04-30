@@ -8,8 +8,8 @@ const usePosts = () => {
         frontmatter {
           title
           slug
+          excerpt
         }
-        excerpt
       }
     }
   }
