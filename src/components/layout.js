@@ -74,23 +74,19 @@ const Layout = ({ children }) => {
         `}>
         <Container fluid>
           <Row>
-            <Col sm={6} style={{color: 'white'}}>
-            <div css={css`
-              min-width: 50%;
-            `}>
-              <a href='https://twitter.com/geosminu' target='_blank'><FaTwitter /></a>
-              <a href='https://www.flickr.com/photos/animanoir/' target='_blank'><FaFlickr /></a>
-              <a href='https://www.linkedin.com/in/oscaramontiel/' target='_blank'><FaLinkedin /></a>
-              <a href='https://github.com/animanoir' target='_blank'><FaGithub /></a>
-            </div>
-            </Col>
-            <Col sm={6}
+            <Col sm={12}
               css={css`
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
               `}
             >
+            <div>
+              <a href='https://twitter.com/geosminu' target='_blank'><FaTwitter /></a>
+              <a href='https://www.flickr.com/photos/animanoir/' target='_blank'><FaFlickr /></a>
+              <a href='https://www.linkedin.com/in/oscaramontiel/' target='_blank'><FaLinkedin /></a>
+              <a href='https://github.com/animanoir' target='_blank'><FaGithub /></a>
+          </div>
             <p css={css`font-size: .5rem; opacity: 0.3 `}>por Óscar A. Montiel | 2020</p>
             </Col>
           </Row>
