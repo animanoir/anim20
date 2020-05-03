@@ -1,16 +1,9 @@
 /** @jsx jsx */
-
-import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout";
 import Menu from '../components/menu';
 import { Canvas } from 'react-three-fiber';
 import {  css, jsx } from '@emotion/core';
-import { OrbitControls, StandardEffects, draco } from 'drei'
-
-import Image from "../components/image"
-import SEO from "../components/seo"
+import { OrbitControls } from 'drei'
 
 function RimLight({ brightness, color }) {
   return (

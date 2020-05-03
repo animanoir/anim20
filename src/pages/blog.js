@@ -1,6 +1,4 @@
 /** @jsx jsx */
-
-import React from "react"
 import Layout from "../components/layout";
 import {  css, jsx } from '@emotion/core';
 import PostPreview from '../components/post-preview';

@@ -1,13 +1,10 @@
 /** @jsx jsx */
-
-import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../../layout';
-
 import { css, jsx } from '@emotion/core';
-
 import {MDXRenderer} from 'gatsby-plugin-mdx';
 
+//Hace query de los posts.
 export const query = graphql`
   query($slug: String!) {
     mdx(frontmatter: {slug: {eq: $slug}}){
