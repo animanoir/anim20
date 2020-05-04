@@ -32,13 +32,15 @@ export const Menu = () => (
         css={css`
           color: white;
           font-family: Open Sans;
-          padding-bottom: 1rem;
+          padding-bottom: .3rem;
           font-size: 1rem;
         `}
       > <span css={css`:hover {color: red}`} > <NavLink to=''>Animanoir (sitio en construcción) </NavLink></span> | <span css={css`font-weight: normal`}>Óscar A. Montiel</span></h1>
       <ul
         css={css`
           list-style-type: none;
+          display: flex;
+          justify-content: space-between;
           font-family: Lato;
           font-size: 0.8rem;
           line-height: 1.6rem;

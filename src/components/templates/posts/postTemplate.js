@@ -23,10 +23,12 @@ const PostTemplate = ({data: {mdx: post}}) => (
     `}>
   <Row>
     <Col sm={12}>
-      <h1>{post.frontmatter.title}</h1>
-      <MDXRenderer>
+      <div css={css`margin-top: 10%;`}>
+        <h1>{post.frontmatter.title}</h1>
+        <MDXRenderer>
         { post.body }
-      </MDXRenderer>
+        </MDXRenderer>
+        </div>
     </Col>
   </Row>
     </Container>
