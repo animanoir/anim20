@@ -1,15 +1,18 @@
 /** @jsx jsx */
+import {useRef} from 'react';
 import Layout from "../components/layout";
 import Menu from '../components/menu';
-import { Canvas } from 'react-three-fiber';
+import { Canvas, useFrame } from 'react-three-fiber';
 import {  css, jsx } from '@emotion/core';
 import { OrbitControls } from 'drei'
+
+
 
 function RimLight({ brightness, color }) {
   return (
     <rectAreaLight
-      width={2}
-      height={2}
+      width={100}
+      height={100}
       intensity={brightness}
       color={color}
       position={[0, 0, 0]}
@@ -26,12 +29,14 @@ function Sphere() {
       userData={{ test: "hello" }}
       position={[0, 0, 0]}
       rotation={[0, 0, 0]}
+      color={0xffff00}
       castShadow
     >
       <sphereGeometry attach="geometry" args={[1, 16, 16]} />
       <meshStandardMaterial
+        wireframe={true}
         attach="material"
-        color="white"
+        color="red"
         roughness={0.1}
         metalness={0.1}
       />
@@ -40,6 +45,8 @@ function Sphere() {
 }
 
 const IndexPage = () => {
+
+
   return(
     <Layout>
     <Menu />
@@ -47,12 +54,11 @@ const IndexPage = () => {
       id="#three"
       onCreated={() => console.info("Se creó el canvas.")}
       css={css`
-          background: green;
           height: 100%
         `}
       camera={{ position: [0, 0, -5] }}>
       <RimLight brightness={54} color={"#fff"} />
-        <Sphere />
+        <Sphere  />
         <OrbitControls />
       </Canvas>
   </Layout>

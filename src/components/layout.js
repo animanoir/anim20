@@ -20,6 +20,10 @@ const Layout = ({ children }) => {
           margin: 0;
         }
 
+      input:focus, textarea:focus, select:focus, canvas:focus{
+        outline: none;
+      }
+
         /*
         * + * {
           margin-top: 1rem;
