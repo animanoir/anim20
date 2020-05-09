@@ -9,15 +9,17 @@ import { OrbitControls } from 'drei'
 
 
 function RimLight({ brightness, color }) {
+  const rectAreaLight = useRef();
+  useFrame(() => (rectAreaLight.current.rotation.x = rectAreaLight.current.rotation.y += .03));
   return (
     <rectAreaLight
+      ref={rectAreaLight}
       width={100}
       height={100}
       intensity={brightness}
       color={color}
       position={[0, 0, 0]}
-      rotation={[0, 180, 0]}
-      castShadow
+      rotation={[0, 360, 0]}
     />
   );
 }
@@ -26,13 +28,11 @@ function Sphere() {
   return (
     <mesh
       visible
-      userData={{ test: "hello" }}
       position={[0, 0, 0]}
       rotation={[0, 0, 0]}
       color={0xffff00}
-      castShadow
     >
-      <sphereGeometry attach="geometry" args={[1, 16, 16]} />
+      <sphereGeometry attach="geometry" args={[1, 3, 16]} />
       <meshStandardMaterial
         wireframe={true}
         attach="material"
@@ -46,7 +46,6 @@ function Sphere() {
 
 const IndexPage = () => {
 
-
   return(
     <Layout>
     <Menu />
@@ -56,8 +55,8 @@ const IndexPage = () => {
       css={css`
           height: 100%
         `}
-      camera={{ position: [0, 0, -5] }}>
-      <RimLight brightness={54} color={"#fff"} />
+      camera={{ position: [0, 0, -1] }}>
+      <RimLight brightness={100} color={"#fff"} />
         <Sphere  />
         <OrbitControls />
       </Canvas>
